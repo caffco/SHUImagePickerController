@@ -52,11 +52,11 @@
     self.targetViewController = viewController;
     self.callbackBlock = callback;
     self.imagePickerController = [[UIImagePickerController alloc] init];
-    self.imagePickerController.navigationBar.translucent = NO;
-    self.imagePickerController.navigationBar.barTintColor = [UIColor whiteColor];
+    //self.imagePickerController.navigationBar.translucent = NO;
+    //self.imagePickerController.navigationBar.barTintColor = [UIColor whiteColor];
     self.imagePickerController.navigationBar.tintColor = [UIColor colorWithRed:0.894
             green:0.106 blue:0.22 alpha:1];
-    self.imagePickerController.navigationBar.barStyle = UIBarStyleBlack;
+    //self.imagePickerController.navigationBar.barStyle = UIBarStyleBlack;
     self.imagePickerController.delegate = self;
     self.imagePickerController.sourceType = sourceType;
     self.cropSize = cropSize;

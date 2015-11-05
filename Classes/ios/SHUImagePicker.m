@@ -120,6 +120,8 @@
     } else {
         self.imagePickerController.modalPresentationStyle = UIModalPresentationPopover;
         self.imagePickerController.popoverPresentationController.sourceView = view;
+        self.imagePickerController.popoverPresentationController.sourceRect =
+            view.bounds;
         [self.targetViewController presentViewController:self.imagePickerController
          animated:YES completion:nil];
     }
